@@ -6,7 +6,7 @@ const toys = [
     type: "Action Figure",
     price: 12.99,
     material: "plastic",
-    nameOfToy: "Ninja Turtle",
+    nameofToy: "Ninja Turtle",
     name: "Donatello",
     numberOwned: 1
 },
@@ -17,7 +17,7 @@ const toys = [
     type: "Action Figure",
     price: 8.99,
     material: "plastic",
-    nameOfToy: "Snake Eyes V.2",
+    nameofToy: "Snake Eyes V.2",
     numberOwned: 2
 },
 
@@ -60,4 +60,8 @@ const soccerBall ={
 toys.push(hotWheel, soccerBall)
 for (const toy of toys) {
     console.log(`$${toy.price}`)
+}
+
+for(const toy of toys){
+    console.log(`The ${toy.manufacturer} ${toy.nameofToy} costs ${toy.price} dollars.`)
 }
