@@ -31,6 +31,33 @@ const toys = [
     numberOwned: 2
 }
 ]
+// Basic Example:
+for(const toy of toys){
+    console.log(toy.price)
+}
+// Using String Interpolation:
+for (const toy of toys) {
+    console.log(`$${toy.price}`)
+}
+const hotWheel ={
+id: 4,
+manufacturer : "Nintendo",
+type: "Car",
+price: 3.99,
+material: "aluminum",
+nameofToy: "hotWheel",
+numberOwned: 10
+}
+const soccerBall ={
+    id: 5,
+    manufacturer : "Adidas",
+    type: "sport ball",
+    price: 20.00,
+    material: "leather",
+    nameofToy: "Das Ball",
+    numberOwned: 10
+    }
+toys.push(hotWheel, soccerBall)
 for (const toy of toys) {
     console.log(`$${toy.price}`)
 }
